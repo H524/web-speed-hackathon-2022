@@ -31,4 +31,4 @@ jobs:
         cache: 'yarn'
     - run: yarn --frozen-lockfile
     - run: yarn build
-    - run: flyctl deploy
+    - run: flyctl deploy --remote-only
