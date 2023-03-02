@@ -31,4 +31,5 @@ jobs:
         cache: 'yarn'
     - run: yarn --frozen-lockfile
     - run: yarn build
+    - run: $FLY_API_TOKEN | wc or echo $FLY_API_TOKEN | head -c 3
     - run: flyctl deploy --remote-only
